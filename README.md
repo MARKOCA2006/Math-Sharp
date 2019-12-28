@@ -20,10 +20,10 @@ I created a folder called. "bin". There is a file called: "MathSharp.dll". You j
 - 1.0.0
 
 ## Current Classes With Their Commands
-- Consts:
--- Pi
--- PiAsDouble
--- PiASDecimal
--- e
--- eAsDouble
--- eAsDecimal
+> Consts:
+- Pi
+- PiAsDouble
+- PiASDecimal
+- e
+- eAsDouble
+- eAsDecimal
