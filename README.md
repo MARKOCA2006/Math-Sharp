@@ -12,3 +12,6 @@ I created a folder called. "bin". There is a file called: "MathSharp.dll". You j
 ## Dependencies
 - Microsoft.NETCore.Platforms(1.1.0)
 - Do not be afraid this is auto-added by Microsoft Visual Studio.
+
+## Targer Framework
+- .NET Standard 2.0
