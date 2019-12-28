@@ -11,5 +11,4 @@ I created a folder called. "bin". There is a file called: "MathSharp.dll". You j
 
 ## Dependencies
 - Microsoft.NETCore.Platforms(1.1.0)
-- netstandard.dll // Only if you downloaded it!
-- Do not be afraid these are auto-added by Microsoft Visual Studio.
+- Do not be afraid this is auto-added by Microsoft Visual Studio.
