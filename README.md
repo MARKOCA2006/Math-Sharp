@@ -19,11 +19,51 @@ I created a folder called. "bin". There is a file called: "MathSharp.dll". You j
 ## Version
 - 1.0.0
 
-## Current Classes With Their Commands
-> Consts:
-- Pi
+## Current Classes/Enums With Their Commands
+> Consts (Class):
+- PiAsFloat
 - PiAsDouble
 - PiASDecimal
-- e
+- eAsFloat
 - eAsDouble
 - eAsDecimal
+- PytagorasAsFloat
+- PytagorasAsDouble
+- PytagorasAsDecimal
+
+> Infinity (Class):
+- posInfinity
+- negInfinity
+
+> Greek (Enum):
+- alpha
+- beta
+- gamma
+- delta
+- epsilon
+- zeta
+- eta
+- theta
+- iota
+- kappa
+- lambda
+- mu
+- nu
+- xi
+- omicron
+- pi
+- rho
+- sigma
+- tau
+- upsilon
+- phi
+- chi
+- psi
+- omega
+
+> Numeric (Class):
+- IsEven
+- Abs
+
+> Algebra (Class):
+- factorial
