@@ -99,13 +99,13 @@ namespace MathSharp
     public class Algebra
     {
         // Factorial
-        public static int factorial(int num)
+        public static int Factorial(int num)
         {
             if (num <= 0)
             {
                 return 1;
             }
-            return factorial(num - 1) * num;
+            return Factorial(num - 1) * num;
         }
     }
 
