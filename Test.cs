@@ -34,7 +34,7 @@ namespace MathSharpTest
 
             //Counts factorial test
             int num = 5;
-            Console.WriteLine("Factoriail of " + num + ": " + Algebra.factorial(num));
+            Console.WriteLine("Factoriail of " + num + ": " + Algebra.Factorial(num));
 
             //IsEven
             Console.WriteLine("2 is " + Numeric.IsEven(2) + " as even.");
