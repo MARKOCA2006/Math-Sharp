@@ -17,7 +17,7 @@ I created a folder called. "bin". There is a file called: "MathSharp.dll". You j
 - .NET Standard 2.0
 
 ## Version
-- 1.0.0
+- Pre-release-2 1.0.0
 
 ## Current Classes/Enums With Their Commands
 > Consts (Class):
