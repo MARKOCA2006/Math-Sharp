@@ -18,9 +18,9 @@ namespace MathSharpTest
             Console.WriteLine("E as a double: " + Consts.eAsDouble);
 
             //Print out Pytagoras' constant
-            Console.WriteLine("Pytagoras' constant as a float: " + Consts.PytagorasAsFloat);
-            Console.WriteLine("Pytagoras' constant as a decimal: " + Consts.PytagorasAsDecimal);
-            Console.WriteLine("Pytagoras' constant as a double: " + Consts.PytagorasAsDouble);
+            Console.WriteLine("Pytagoras' constant as a float: " + Consts.PythagorasAsFloat);
+            Console.WriteLine("Pytagoras' constant as a decimal: " + Consts.PythagorasAsDecimal);
+            Console.WriteLine("Pytagoras' constant as a double: " + Consts.PythagorasAsDouble);
 
             //Print out infinity
             Console.WriteLine("Positive Infinity: " + Infinity.posInfinity);
@@ -33,8 +33,7 @@ namespace MathSharpTest
             Console.WriteLine(Greek.alpha);
 
             //Counts factorial test
-            int num = 5;
-            Console.WriteLine("Factoriail of " + num + ": " + Algebra.Factorial(num));
+            Console.WriteLine("Factoriail of 5: " + Algebra.Factorial(5));
 
             //IsEven
             Console.WriteLine("2 is " + Numeric.IsEven(2) + " as even.");
@@ -44,6 +43,12 @@ namespace MathSharpTest
             Console.WriteLine("Abs of 3 = " + Numeric.Abs(3));
             Console.WriteLine("Abs of -15 = " + Numeric.Abs(-15));
             Console.WriteLine("Abs of -3011.34 = " + Numeric.Abs(-3011.34));
+
+            //IsPrime
+            Console.WriteLine("2 is " + Numeric.IsPrime(2) + " as prime.");
+            Console.WriteLine("2 is " + Numeric.IsPrime(4) + " as prime.");
+            Console.WriteLine("2 is " + Numeric.IsPrime(1999) + " as prime.");
+            Console.WriteLine("2 is " + Numeric.IsPrime(315) + " as prime.");
 
             //Stops the project
             Console.ReadKey();
