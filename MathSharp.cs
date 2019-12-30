@@ -97,6 +97,4 @@ namespace MathSharp
             return Factorial(num - 1) * num;
         }
     }
-
-
 }
