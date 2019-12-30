@@ -17,7 +17,7 @@ namespace MathSharpTest
             Console.WriteLine("E as a decimal: " + Consts.eAsDecimal);
             Console.WriteLine("E as a double: " + Consts.eAsDouble);
 
-            //Print out Pytagoras' constant
+            //Print out Pythagoras' constant
             Console.WriteLine("Pytagoras' constant as a float: " + Consts.PythagorasAsFloat);
             Console.WriteLine("Pytagoras' constant as a decimal: " + Consts.PythagorasAsDecimal);
             Console.WriteLine("Pytagoras' constant as a double: " + Consts.PythagorasAsDouble);
