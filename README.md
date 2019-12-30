@@ -62,8 +62,9 @@ I created a folder called. "bin". There is a file called: "MathSharp.dll". You j
 - omega
 
 > Numeric (Class):
-- IsEven
-- Abs
+- IsEven()
+- Abs()
+- IsPrime()
 
 > Algebra (Class):
-- factorial
+- factorial()
