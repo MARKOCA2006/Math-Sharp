@@ -17,7 +17,7 @@ namespace MathSharpTest
             Console.WriteLine("E as a decimal: " + Consts.eAsDecimal);
             Console.WriteLine("E as a double: " + Consts.eAsDouble);
 
-            //Print out Pythagoras' constant
+            //Print out Pytagoras' constant
             Console.WriteLine("Pytagoras' constant as a float: " + Consts.PythagorasAsFloat);
             Console.WriteLine("Pytagoras' constant as a decimal: " + Consts.PythagorasAsDecimal);
             Console.WriteLine("Pytagoras' constant as a double: " + Consts.PythagorasAsDouble);
@@ -49,6 +49,22 @@ namespace MathSharpTest
             Console.WriteLine("2 is " + Numeric.IsPrime(4) + " as prime.");
             Console.WriteLine("2 is " + Numeric.IsPrime(1999) + " as prime.");
             Console.WriteLine("2 is " + Numeric.IsPrime(315) + " as prime.");
+
+            //decToBin
+            Console.WriteLine("8 in decimal is: " + Numeric.decToBin(8));
+            Console.WriteLine("100 in decimal is: " + Numeric.decToBin(100));
+            Console.WriteLine("20 in decimal is: " + Numeric.decToBin(20));
+            Console.WriteLine("0 in decimal is: " + Numeric.decToBin(0));
+
+            //Pow
+            Console.WriteLine("5^3: " + Algebra.Pow(5, 3));
+            Console.WriteLine("100^41: " + Algebra.Pow(100, 41));
+            Console.WriteLine("5.9^3.45: " + Algebra.Pow(5.9, 3.45));
+
+            //Root
+            Console.WriteLine("Cube root of 8: " + Algebra.Root(8, 3));
+            Console.WriteLine("5th root of 434: " + Algebra.Root(434, 5));
+            Console.WriteLine("Cube root of 15: " + Algebra.Root(15, 3));
 
             //Stops the project
             Console.ReadKey();
