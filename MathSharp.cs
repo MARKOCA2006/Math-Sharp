@@ -112,10 +112,22 @@ namespace MathSharp
                 return num * (180 / Consts.PiAsDouble);
             }
 
-            public static double PythagorasTheory(double a, double b)
+            public static double PythagorasTheory(double a = 0, double b = 0, double c = 0)
             {
-                double temp = Algebra.Pow(a, 2) + Algebra.Pow(b, 2);
-                return Algebra.Root(temp, 2);
+                if (c == 0)
+                {
+                    double temp = Algebra.Pow(a, 2) + Algebra.Pow(b, 2);
+                    return Algebra.Root(temp, 2);
+                } else if (b == 0)
+                {
+                    double temp = Algebra.Pow(c, 2) - Algebra.Pow(a, 2);
+                    return Algebra.Root(temp, 2);
+                } else if (a == 0)
+                {
+                    double temp = Algebra.Pow(c, 2) - Algebra.Pow(b, 2);
+                    return Algebra.Root(temp, 2);
+                }
+                return 0;
             }
         }
     }
