@@ -25,13 +25,7 @@ namespace MathSharpTest
             //Print out infinity
             Console.WriteLine("Positive Infinity: " + Infinity.posInfinity);
             Console.WriteLine("Negative Infinity: " + Infinity.negInfinity);
-
-            //Instances for the greek alphabet
-            Console.WriteLine(Greek.iota);
-            Console.WriteLine(Greek.zeta);
-            Console.WriteLine(Greek.delta);
-            Console.WriteLine(Greek.alpha);
-
+            
             //Counts factorial test
             Console.WriteLine("Factoriail of 5: " + Algebra.Factorial(5));
 
