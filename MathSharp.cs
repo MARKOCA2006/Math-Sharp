@@ -24,36 +24,6 @@ namespace MathSharp
         public static double negInfinity = double.NegativeInfinity;
     }
 
-
-    public enum Greek
-    {
-        alpha, // 0
-        beta, // 1
-        gamma, // 2
-        delta, // 3
-        epsilon, // 4
-        zeta, // 5
-        eta, // 6
-        theta, // 7
-        iota, // 8
-        kappa, // 9
-        lambda,  // 10
-        mu, // 11
-        nu, // 12
-        xi, // 13
-        omicron, // 14
-        pi, // 15
-        rho, // 16
-        sigma, // 17
-        tau, // 18
-        upsilon, // 19
-        phi, // 20
-        chi, // 21
-        psi, // 22
-        omega // 23
-    }
-
-
     public class Numeric
     {
         public static bool IsEven(int num)
