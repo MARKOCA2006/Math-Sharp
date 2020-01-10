@@ -1,134 +1,78 @@
-namespace MathSharp
+using MathSharp.Infinity;
+using MathSharp.Constants;
+using MathSharp;
+using MathSharp.Geometry;
+using System;
+
+namespace MathSharpTest
 {
-    using System;
-
-    namespace Constants
+    class Test
     {
-        public static class Consts
+        static void Main(string[] args)
         {
-            public static float PiAsFloat = (float)3.141592653589793238462643383279502884197169399375105820974944592307816406;
-            public static double PiAsDouble = (double)3.141592653589793238462643383279502884197169399375105820974944592307816406;
-            public static decimal PiAsDecimal = (decimal)3.141592653589793238462643383279502884197169399375105820974944592307816406;
+            //Print out PI
+            Console.WriteLine("Pi as a float: " + Consts.PiAsFloat);
+            Console.WriteLine("Pi as a decimal: " + Consts.PiAsDecimal);
+            Console.WriteLine("Pi as a double: " + Consts.PiAsDouble);
 
-            public static float eAsFloat = (float)2.7182818284590452353602874713526624977572470;
-            public static double eAsDouble = (double)2.7182818284590452353602874713526624977572470;
-            public static decimal eAsDecimal = (decimal)2.7182818284590452353602874713526624977572470;
+            //Print out E
+            Console.WriteLine("E as a float: " + Consts.eAsFloat);
+            Console.WriteLine("E as a decimal: " + Consts.eAsDecimal);
+            Console.WriteLine("E as a double: " + Consts.eAsDouble);
 
-            public static float PythagorasAsFloat = (float)1.41421356237309504880168872420969807856967187537694807317667973799;
-            public static double PythagorasAsDouble = (double)1.41421356237309504880168872420969807856967187537694807317667973799;
-            public static decimal PythagorasAsDecimal = (decimal)1.41421356237309504880168872420969807856967187537694807317667973799;
-        }
-    }
+            //Print out Pytagoras' constant
+            Console.WriteLine("Pytagoras' constant as a float: " + Consts.PythagorasAsFloat);
+            Console.WriteLine("Pytagoras' constant as a decimal: " + Consts.PythagorasAsDecimal);
+            Console.WriteLine("Pytagoras' constant as a double: " + Consts.PythagorasAsDouble);
 
-    namespace Infinity
-    {
-        public static class Infinity
-        {
-            public static double posInfinity = double.PositiveInfinity;
-            public static double negInfinity = double.NegativeInfinity;
-        }
-    }
+            //Print out infinity
+            Console.WriteLine("Positive Infinity: " + Infinity.posInfinity);
+            Console.WriteLine("Negative Infinity: " + Infinity.negInfinity);
 
+            //Counts factorial test
+            Console.WriteLine("Factoriail of 5: " + Algebra.Factorial(5));
 
-    public class Numeric
-    {
-        public static bool IsEven(int num)
-        {
-            if (num % 2 == 0)
-                return true;
-            else
-                return false;
-        }
+            //IsEven
+            Console.WriteLine("2 is " + Numeric.IsEven(2) + " as even.");
+            Console.WriteLine("3 is " + Numeric.IsEven(3) + " as even.");
 
-        public static double Abs(double num)
-        {
-            if (num < 0)
-                return -num;
-            else
-                return num;
-        }
+            //Abs
+            Console.WriteLine("Abs of 3 = " + Numeric.Abs(3));
+            Console.WriteLine("Abs of -15 = " + Numeric.Abs(-15));
+            Console.WriteLine("Abs of -3011.34 = " + Numeric.Abs(-3011.34));
 
-        public static bool IsPrime(int num)
-        {
-            if (num == 2 || num == 3 || num == 5 || num == 7)
-                return true;
-            else if (num % 2 == 0)
-                return false;
-            else if (num % 3 == 0)
-                return false;
-            else if (num % 5 == 0)
-                return false;
-            else if (num % 7 == 0)
-                return false;
-            else
-                return true;
-        }
+            //IsPrime
+            Console.WriteLine("2 is " + Numeric.IsPrime(2) + " as prime.");
+            Console.WriteLine("2 is " + Numeric.IsPrime(4) + " as prime.");
+            Console.WriteLine("2 is " + Numeric.IsPrime(1999) + " as prime.");
+            Console.WriteLine("2 is " + Numeric.IsPrime(315) + " as prime.");
 
-        public static int decToBin(int num)
-        {  
-            int a = 0;
-            int b = 0;
-            while (num != 0)
-            {
-                int temp = num % 2;
-                int c = (int)Math.Pow(10, b);
-                a += temp * c;
-                num /= 2;  
-                b++;
-            }
-            return a;
-        }
-    }
+            //decToBin
+            Console.WriteLine("8 in decimal is: " + Numeric.decToBin(8));
+            Console.WriteLine("100 in decimal is: " + Numeric.decToBin(100));
+            Console.WriteLine("20 in decimal is: " + Numeric.decToBin(20));
+            Console.WriteLine("0 in decimal is: " + Numeric.decToBin(0));
 
+            //Pow
+            Console.WriteLine("5^3: " + Algebra.Pow(5, 3));
+            Console.WriteLine("100^41: " + Algebra.Pow(100, 41));
+            Console.WriteLine("5.9^3.45: " + Algebra.Pow(5.9, 3.45));
 
-    public class Algebra
-    {
-        public static int Factorial(int num)
-        {
-            if (num <= 0)
-                return 1;
-            return Factorial(num - 1) * num;
-        }
+            //Root
+            Console.WriteLine("Cube root of 8: " + Algebra.Root(8, 3));
+            Console.WriteLine("5th root of 434: " + Algebra.Root(434, 5));
+            Console.WriteLine("Cube root of 15: " + Algebra.Root(15, 3));
 
-        public static double Pow(double a, double n)
-        {
-            return Math.Pow(a, n);
-        }
+            //Rad
+            Console.WriteLine("Rad of 2: " + Geometry.Rad(2));
+            Console.WriteLine("Rad of 556: " + Geometry.Rad(556));
+            Console.WriteLine("Rad of 41: " + Geometry.Rad(41));
 
-        public static double Root(double a, int n)
-        {
-            return Pow(a, (double)1 / n);
-        }
-    }
+            //Pythagoras Theory
+            Console.WriteLine("If we apply Pythagoras' Theory to 5 and 6 we get: " + Geometry.PythagorasTheory(5, 6));
 
-    namespace Geometry
-    {
-        using MathSharp.Constants;
-        public class Geometry
-        {
-
-            public static double Rad(double num)
-            {
-                return num * (180 / Consts.PiAsDouble);
-            }
-
-            public static double PythagorasTheory(double a = 0, double b = 0, double c = 0)
-            {
-                if (c == 0)
-                {
-                    double temp = Algebra.Pow(a, 2) + Algebra.Pow(b, 2);
-                    return Algebra.Root(temp, 2);
-                } else if (b == 0)
-                {
-                    double temp = Algebra.Pow(c, 2) - Algebra.Pow(a, 2);
-                    return Algebra.Root(temp, 2);
-                } else if (a == 0)
-                {
-                    double temp = Algebra.Pow(c, 2) - Algebra.Pow(b, 2);
-                    return Algebra.Root(temp, 2);
-                }
-                return 0;
-            }
+            //Stops the project
+            Console.ReadKey();
         }
     }
 }
